@@ -6,7 +6,7 @@
 /*   By: ahallain <ahallain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 15:45:32 by ahallain          #+#    #+#             */
-/*   Updated: 2020/02/01 09:53:14 by ahallain         ###   ########.fr       */
+/*   Updated: 2020/02/03 09:50:24 by ahallain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ size_t	ft_print_arg(char *arg, va_list list, t_display settings, int display)
 		|| last == 'x' || last == 'X')
 		res += ft_printf_d(arg, list, settings, display);
 	else if (last == 'p')
-		res += ft_printf_p(list, display);
+		res += ft_printf_p(list, settings, display);
 	else if (last == '%')
 		res += ft_printf_prc(settings, display);
 	return (res);

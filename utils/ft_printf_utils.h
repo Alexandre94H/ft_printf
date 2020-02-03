@@ -6,7 +6,7 @@
 /*   By: ahallain <ahallain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 16:58:44 by ahallain          #+#    #+#             */
-/*   Updated: 2020/02/01 10:41:26 by ahallain         ###   ########.fr       */
+/*   Updated: 2020/02/03 09:50:43 by ahallain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ size_t			ft_print_arg(char *arg, va_list list, t_display settings,
 size_t			ft_printf_c(va_list list, int display);
 size_t			ft_printf_s(va_list list, t_display settings, int display);
 size_t			ft_putstr_len(char *str, size_t len, int display);
-size_t			ft_printf_p(va_list list, int display);
+size_t			ft_printf_p(va_list list, t_display settings, int display);
 size_t			ft_printf_d(char *arg, va_list list, t_display settings,
 	int display);
 size_t			ft_putnbr(char *base, long nbr, int display);
